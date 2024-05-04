@@ -1,53 +1,62 @@
 # Final Project- Pediatric Healthcare Management
 
-The Pediatric System is a Django-based web application for managing pediatric patient records.
+# Pediatric System
 
-Requirements
-Python 3.6 or higher
-Django 3.0 or higher
-SQLite (or any other compatible database)
-Git (optional)
-Installation
-Clone the repository to your local machine:
-bash
-Copy code
-git clone <repository_url>
-Or download the zip file and extract it to your desired location.
-Navigate to the project directory:
-bash
-Copy code
-cd PediatricSystem
-Create a virtual environment (optional but recommended):
-bash
-Copy code
-python3 -m venv myenv
-Activate the virtual environment:
-On Windows:
-bash
-Copy code
-myenv\Scripts\activate
-On macOS and Linux:
-bash
-Copy code
-source myenv/bin/activate
-Install the project dependencies:
-bash
-Copy code
-pip install -r requirements.txt
-Apply the database migrations:
-bash
-Copy code
-python manage.py migrate
-Usage
-Start the development server:
-bash
-Copy code
-python manage.py runserver
-Access the application in your web browser at http://localhost:8000
-Use the provided functionalities to manage pediatric patient records.
-Testing
-To run the tests, use the following command:
+## Overview
 
-bash
-Copy code
-python manage.py test
+The Pediatric System is a Django-based web application designed to manage pediatric patient records, appointments, and medical information.
+
+## Requirements
+
+- Python 3.x
+- Django 3.x
+- SQLite (for development)
+- Other Python packages listed in `requirements.txt`
+
+## Installation
+
+1. Clone the repository:
+
+    ```bash
+    git clone <repository_url>
+    ```
+
+2. Navigate to the project directory:
+
+    ```bash
+    cd PediatricSystem
+    ```
+
+3. Create and activate a virtual environment (optional but recommended):
+
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
+
+4. Install dependencies:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+5. Apply migrations:
+
+    ```bash
+    python manage.py migrate
+    ```
+
+## Usage
+
+1. Run the development server:
+
+    ```bash
+    python manage.py runserver
+    ```
+
+2. Access the application in your web browser at `http://localhost:8000/`.
+
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
