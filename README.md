@@ -54,14 +54,19 @@ The Pediatric System is a Django-based web application designed to manage pediat
 
 2. Access the application in your web browser at `http://localhost:8000/`.
 
-## Contributing
+## Database 
+1. Python manage.py check
+2. Python manage.py makemigrations
+3. Python manage.py migrate
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/foo-bar`).
-3. Make your changes.
-4. Commit your changes (`git commit -am 'Add new feature'`).
-5. Push to the branch (`git push origin feature/foo-bar`).
-6. Create a new Pull Request.
+## Running Test Examples
+1. ./manage.py test pedarch.tests.PatientModelTests       
+
+## Install Reddis for Mac
+1. pip install redis
+
+## Run Reddis
+1. redis-server
 
 ## License
 
