@@ -1,0 +1,42 @@
+# Query: barkyapi
+# ContextLines: 1
+
+10 results - 6 files
+
+src/PediatricSystem/djbarky/settings.py:
+  47      # local
+  48:     "pediatric.apps.pediatricConfig",
+  49      "barkyarch.apps.BarkyarchConfig",
+
+src/PediatricSystem/djbarky/urls.py:
+  21      path("admin/", admin.site.urls),
+  22:     path("", include("pediatric.urls")),
+  23  ]
+
+src/PediatricSystem/pediatric/__init__.py:
+  1: default_app_config = "pediatric.apps.ProfilesConfig"
+
+src/PediatricSystem/pediatric/models.py:
+  85  #     class Meta:
+  86: #         app_label = "pediatric"
+  87  
+
+src/PediatricSystem/pediatric/tests.py:
+  25          # the simple router provides the name 'bookmark-list' for the URL pattern: https://www.django-rest-framework.org/api-guide/routers/#simplerouter
+  26:         self.list_url = reverse("pediatric:bookmark-list")
+  27          self.detail_url = reverse(
+  28:             "pediatric:bookmark-detail", kwargs={"pk": self.bookmark.id}
+  29          )
+
+  72          response = self.client.delete(
+  73:             reverse("pediatric:bookmark-detail", kwargs={"pk": self.bookmark.id})
+  74          )
+
+  90          response = self.client.put(
+  91:             reverse("pediatric:bookmark-detail", kwargs={"pk": self.bookmark.id}),
+  92              data,
+
+src/PediatricSystem/pediatric/urls.py:
+  10  
+  11: app_name = "pediatric"
+  12  
