@@ -24,7 +24,7 @@ application = ProtocolTypeRouter(
         "http": ped_asgi_app,
         "channel": ChannelNameRouter(
             {
-                "bookmarks-add": consumers.SimpleBookmarkConsumer.as_asgi(),
+                "patient-add": consumers.SimplePatientConsumer.as_asgi(),
             }
         ),
     }
