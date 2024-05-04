@@ -55,9 +55,9 @@ The Pediatric System is a Django-based web application designed to manage pediat
 2. Access the application in your web browser at `http://localhost:8000/`.
 
 ## Database 
-1. Python manage.py check
-2. Python manage.py makemigrations
-3. Python manage.py migrate
+    Python manage.py check
+    Python manage.py makemigrations
+    Python manage.py migrate
 
 ## Running Test Examples    
  
