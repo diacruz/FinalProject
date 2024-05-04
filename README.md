@@ -60,18 +60,17 @@ The Pediatric System is a Django-based web application designed to manage pediat
 3. Python manage.py migrate
 
 ## Running Test Examples    
-  ```bash
+ 
     ./manage.py test pedarch.tests.PatientModelTests
-    ```
+
 ## Install Reddis for Mac
-    ```bash
+
     cd pip install redis
-    ```
+   
 
 ## Run Reddis
-```bash
     redis-server
-    ```
+
 
 ## License
 
